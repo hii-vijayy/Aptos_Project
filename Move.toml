@@ -1,0 +1,15 @@
+[package]
+name = "Dynamic token rebalancing pools"
+version = "1.0.0"
+authors = []
+
+[addresses]
+MyModule="0x24211d0998cd4d91495b81520e5b69e483d1c4477eb35677b55aeaaa2f2d1777"
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
