@@ -36,10 +36,11 @@ The current implementation is a minimal prototype with room for growth:
 ## Features
 - **Multi-Owner Support**: Define a list of owners during wallet creation.
 - **Approval Threshold**: Specify how many approvals are needed for a transaction.
-- **Simple Execution**: Transfers funds once conditions are met (simplified for this example).
+- **Simple Execution**: Transfers funds from the approver to a recipient once conditions are met (simplified for this example).
 
 ## Limitations
-- **Simplified Approvals**: Does not fully track individual owner approvals due to line constraints.
+- **Simplified Approvals**: Does not fully track individual owner approvals; uses a basic pending amount check.
+- **Funds Source**: Withdraws from the approver’s account, not a shared wallet balance, due to minimal design.
 - **Basic Security**: Lacks advanced features like timelocks, revocation, or multi-step verification.
 - **Not Production-Ready**: Intended as a minimal demo; additional logic is needed for real-world use.
 
